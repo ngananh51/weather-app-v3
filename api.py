@@ -25,3 +25,18 @@ def get_weather_data(city_name, api_key):
         }
     else:
         return None
+
+
+
+def display_weather_data(city_name):
+    """Hiển thị dữ liệu thời tiết đã xử lý."""
+    weather_data = get_weather_data(city_name)
+
+    if weather_data:
+        print(f"Thời tiết tại {weather_data['city']}:")
+        print(f"Nhiệt độ: {weather_data['temperature']}°C")
+        print(f"Mô tả: {weather_data['description']}")
+        print(f"Độ ẩm: {weather_data['humidity']}%")
+        print(f"Tốc độ gió: {weather_data['wind_speed']} m/s")
+    else:
+        print(f"Không thể lấy dữ liệu thời tiết cho {city_name}.")
