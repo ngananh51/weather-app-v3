@@ -6,6 +6,6 @@ Write your name on line 6, save it, and then head back to GitHub Desktop.
 
 ---
 ## Chạy front-end
-Tải thự viện trước gõ (lưu ý cd vào folder /front-end):
+Tải thự viện trước gõ (lưu ý cd vào weather-app-v3):
 
-``` pip install -r requirement.txt ```
+``` pip install -r requirements.txt ```
