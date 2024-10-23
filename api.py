@@ -17,11 +17,14 @@ def get_weather_data(city_name, api_key):
     if response.status_code == 200:
         data = response.json()
         return {
-            'city': data['name'],
-            'temperature': data['main']['temp'],
-            'description': data['weather'][0]['description'],
-            'humidity': data['main']['humidity'],
-            'wind_speed': data['wind']['speed']
+            "city": data["name"],
+            "temperature": data["main"]["temp"],
+            "wind_speed": data["wind"]["speed"],
+            "wind_deg": data["wind"]["deg"],
+            "pressure": data["main"]["pressure"],
+            "humidity": data["main"]["humidity"],
+            "clouds": data["clouds"]["all"],
+            "visibility": data["visibility"] / 1000
         }
     else:
         return None
