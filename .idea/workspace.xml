@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee881017-19e4-4ef7-ad23-0c6907123b39" name="Changes" comment="cập nhật api" />
+    <list default="true" id="ee881017-19e4-4ef7-ad23-0c6907123b39" name="Changes" comment="cập nhật api 3">
+      <change beforePath="$PROJECT_DIR$/connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/connect.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +76,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729745248231</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cập nhật api 2">
+      <option name="closed" value="true" />
+      <created>1729745703258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729745703258</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cập nhật api 3">
+      <option name="closed" value="true" />
+      <created>1729745751229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729745751229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cập nhật api" />
-    <option name="LAST_COMMIT_MESSAGE" value="cập nhật api" />
+    <MESSAGE value="cập nhật api 2" />
+    <MESSAGE value="cập nhật api 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="cập nhật api 3" />
   </component>
 </project>

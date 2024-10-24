@@ -30,7 +30,7 @@ class WeatherApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.lineEdit_humidity.setText(f"{weather_data['humidity']}%")
             self.lineEdit_vision.setText(f"{weather_data['visibility']} km")
             self.lineEdit_cloud_ratio.setText(f"{weather_data['clouds']}%")
-            self.lineEdit_nation.setText(weather_data["nation"])  # Hiển thị mã quốc gia
+            self.lineEdit_nation.setText(weather_data["country"])  # Hiển thị mã quốc gia
             lat, lon = weather_data["coordinates"]
             self.lineEdit_coordinates.setText(f"{lat}, {lon}")  # Hiển thị toạ độ
         else:
