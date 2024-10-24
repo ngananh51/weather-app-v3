@@ -18,7 +18,7 @@ def get_weather_data(city_name, api_key):
         data = response.json()
         return {
             "city": data["name"],
-            "nation": data["sys"]["nation"],
+            "country": data["sys"]["country"],
             "temperature": data["main"]["temp"],
             "wind_speed": data["wind"]["speed"],
             "wind_deg": data["wind"]["deg"],
