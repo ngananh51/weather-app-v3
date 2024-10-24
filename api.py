@@ -26,7 +26,7 @@ def get_weather_data(city_name, api_key):
             "humidity": data["main"]["humidity"],
             "clouds": data["clouds"]["all"],
             "visibility": data["visibility"] / 1000,
-            "coordinates": (data["coord"]["lat"], data["coord"]["long"])
+            "coordinates": (data["coord"]["lat"], data["coord"]["lon"])
         }
     else:
         return None
