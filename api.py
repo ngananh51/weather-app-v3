@@ -31,3 +31,4 @@ def get_weather_data(city_name, api_key):
     else:
         return None
 
+# print(get_weather_data('Hanoi',API_KEY))

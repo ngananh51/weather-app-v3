@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee881017-19e4-4ef7-ad23-0c6907123b39" name="Changes" comment="cập nhật connect" />
+    <list default="true" id="ee881017-19e4-4ef7-ad23-0c6907123b39" name="Changes" comment="cập nhật api 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/giaodienchinh.ui" beforeDir="false" afterPath="$PROJECT_DIR$/giaodienchinh.ui" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +31,12 @@
     &quot;assignee&quot;: &quot;Khai-Nguyen2&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ngananh51/weather-app-v3",
-    "accountId": "7a17f29c-b33f-4fae-a18a-aa2ef594ca68"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ngananh51/weather-app-v3&quot;,
+    &quot;accountId&quot;: &quot;7a17f29c-b33f-4fae-a18a-aa2ef594ca68&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -42,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.api.executor": "Run",
     "Python.app.executor": "Run",
     "Python.connect.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -90,15 +96,7 @@
       <option name="project" value="LOCAL" />
       <updated>1729745751229</updated>
     </task>
-    <task id="LOCAL-00004" summary="cập nhật connect">
-      <option name="closed" value="true" />
-      <created>1729745942498</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1729745942498</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,7 +126,6 @@
     <MESSAGE value="cập nhật api" />
     <MESSAGE value="cập nhật api 2" />
     <MESSAGE value="cập nhật api 3" />
-    <MESSAGE value="cập nhật connect" />
-    <option name="LAST_COMMIT_MESSAGE" value="cập nhật connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="cập nhật api 3" />
   </component>
 </project>
