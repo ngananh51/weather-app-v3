@@ -283,7 +283,7 @@ class Ui_MainWindow(object):
         self.label_11.setText(_translate("MainWindow", "Độ ẩm:"))
         self.label_12.setText(_translate("MainWindow", "Tầm nhìn:"))
         self.label_13.setText(_translate("MainWindow", "Tỉ lệ mây:"))
-        self.label_14.setText(_translate("MainWindow", "km/h"))
+        self.label_14.setText(_translate("MainWindow", "m/s"))
         self.label_15.setText(_translate("MainWindow", "độ C"))
         self.label_16.setText(_translate("MainWindow", "%"))
         self.label_17.setText(_translate("MainWindow", "%"))

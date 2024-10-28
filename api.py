@@ -4,7 +4,7 @@ import requests
 API_KEY = '92c553dbdce3e66246fefaad9c9460e5'
 
 def get_weather_data(city_name, api_key):
-    """Lấy dữ liệu thời tiết từ OpenWeatherMap API."""
+    # Lấy dữ liệu thời tiết từ OpenWeatherMap API
     base_url = "http://api.openweathermap.org/data/2.5/weather"
     params = {
         'q': city_name,

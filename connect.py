@@ -9,30 +9,31 @@ class WeatherApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.API_KEY = '92c553dbdce3e66246fefaad9c9460e5'
 
-        # Kết nối sự kiện thay đổi thành phố trong comboBox với hàm cập nhật thời tiết
+        # Kết nối với hộp chọn toạ độ khi người dùng thay đổi thành phố
         self.comboBox_toa_do.currentIndexChanged.connect(self.update_weather_info)
 
-    def update_weather_info(self):
-        # Lấy tên thành phố mà người dùng chọn
-        city = self.comboBox_toa_do.currentText()
+        # Kết nối các menu item Reset và Exit
+        self.actionReset.triggered.connect(self.reset_app)
+        self.actionExit.triggered.connect(self.close_app)
 
-        # Gọi API lấy dữ liệu thời tiết của thành phố
-        weather_data = get_weather_data(city, self.API_KEY)
+    def update_weather_info(self):
+        city = self.comboBox_toa_do.currentText()   # Lấy tên thành phố mà người dùng chọn
+        weather_data = get_weather_data(city, self.API_KEY)    # Gọi API lấy dữ liệu thời tiết của thành phố
 
         # Kiểm tra xem API có trả về dữ liệu thành công không
         if weather_data:
             # Cập nhật dữ liệu vào các trường trong giao diện
             self.lineEdit_location.setText(weather_data["city"])
-            self.lineEdit_temperature.setText(f"{weather_data['temperature']} °C")
-            self.lineEdit_wind_power.setText(f"{weather_data['wind_speed']} m/s")
-            self.lineEdit_wind_direction.setText(f"{weather_data['wind_deg']}°")
-            self.lineEdit_atmospheric_pressure.setText(f"{weather_data['pressure']} hPa")
-            self.lineEdit_humidity.setText(f"{weather_data['humidity']}%")
-            self.lineEdit_vision.setText(f"{weather_data['visibility']} km")
-            self.lineEdit_cloud_ratio.setText(f"{weather_data['clouds']}%")
-            self.lineEdit_nation.setText(weather_data["country"])  # Hiển thị mã quốc gia
+            self.lineEdit_temperature.setText(f"{weather_data['temperature']}")
+            self.lineEdit_wind_power.setText(f"{weather_data['wind_speed']}")
+            self.lineEdit_wind_direction.setText(f"{weather_data['wind_deg']}")
+            self.lineEdit_atmospheric_pressure.setText(f"{weather_data['pressure']}")
+            self.lineEdit_humidity.setText(f"{weather_data['humidity']}")
+            self.lineEdit_vision.setText(f"{weather_data['visibility']}")
+            self.lineEdit_cloud_ratio.setText(f"{weather_data['clouds']}")
+            self.lineEdit_nation.setText(weather_data["country"])
             lat, lon = weather_data["coordinates"]
-            self.lineEdit_coordinates.setText(f"{lat}, {lon}")  # Hiển thị toạ độ
+            self.lineEdit_coordinates.setText(f"{lat}, {lon}")
         else:
             # Hiển thị thông báo lỗi nếu không lấy được dữ liệu
             self.lineEdit_location.setText("Error")
@@ -45,6 +46,24 @@ class WeatherApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.lineEdit_cloud_ratio.setText("N/A")
             self.lineEdit_nation.setText("N/A")
             self.lineEdit_coordinates.setText("N/A")
+
+    def reset_app(self):
+        # Đặt lại tất cả các ô hiển thị về trạng thái ban đầu
+        self.lineEdit_location.clear()
+        self.lineEdit_temperature.clear()
+        self.lineEdit_wind_power.clear()
+        self.lineEdit_wind_direction.clear()
+        self.lineEdit_atmospheric_pressure.clear()
+        self.lineEdit_humidity.clear()
+        self.lineEdit_vision.clear()
+        self.lineEdit_cloud_ratio.clear()
+        self.lineEdit_nation.clear()
+        self.lineEdit_coordinates.clear()
+        self.comboBox_toa_do.setCurrentIndex(0)  # Đặt lại về vị trí đầu tiên trong danh sách hộp Toạ độ
+
+    def close_app(self):
+        # Đóng ứng dụng
+        QtWidgets.QApplication.quit()
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
