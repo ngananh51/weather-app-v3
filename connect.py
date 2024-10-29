@@ -47,8 +47,7 @@ class WeatherApp(QtWidgets.QMainWindow, Ui_MainWindow):
             self.lineEdit_nation.setText("N/A")
             self.lineEdit_coordinates.setText("N/A")
 
-    def reset_app(self):
-        # Đặt lại tất cả các ô hiển thị về trạng thái ban đầu
+    def reset_app(self):    # Đặt lại tất cả các ô hiển thị về trạng thái ban đầu
         self.lineEdit_location.clear()
         self.lineEdit_temperature.clear()
         self.lineEdit_wind_power.clear()
@@ -61,8 +60,7 @@ class WeatherApp(QtWidgets.QMainWindow, Ui_MainWindow):
         self.lineEdit_coordinates.clear()
         self.comboBox_toa_do.setCurrentIndex(0)  # Đặt lại về vị trí đầu tiên trong danh sách hộp Toạ độ
 
-    def close_app(self):
-        # Đóng ứng dụng
+    def close_app(self):    # Đóng ứng dụng
         QtWidgets.QApplication.quit()
 
 if __name__ == "__main__":
